@@ -1,0 +1,103 @@
+.top-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top-detail > div > h2 {
+  margin-top: 5px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.top-detail .main-detail {
+  width: 100%;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.top-detail .main-detail .duration {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(255, 136, 0);
+  font-weight: 700;
+}
+
+.top-detail .main-detail .duration > span {
+  margin-left: 10px;
+}
+
+.top-detail .main-detail > span {
+  background-color: rgb(255, 136, 0);
+  padding: 5px;
+  color: white;
+}
+
+.top-detail .desc-detail {
+  margin-top: 20px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 50% 50%;
+}
+
+.desc-detail > div > span {
+  color: rgba(41, 41, 41, 0.667);
+}
+
+.synopsis {
+  margin-top: 20px;
+}
+
+.synopsis > span {
+  color: rgb(255, 136, 0);
+  font-weight: 700;
+  padding-bottom: 5px;
+  border-bottom: 2px solid rgb(255, 136, 0);
+}
+
+.synopsis > p {
+  text-align: justify;
+  color: rgba(41, 41, 41, 0.667);
+}
+
+.synopsis .ratings {
+  margin-top: 20px;
+  background-color: rgb(247, 247, 247);
+  margin-right: 20px;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+/* tablet */
+@media only screen and (min-width: 600px) {
+}
+
+/* desktop */
+@media only screen and (min-width: 768px) {
+  .top-detail {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .top-detail > div > h2 {
+    margin-top: 5px;
+    text-align: left;
+    font-size: 24px;
+  }
+
+  .top-detail > img {
+    margin-right: 20px;
+    height: 400px;
+  }
+
+  .top-detail .desc-detail {
+    font-size: 14px;
+  }
+}

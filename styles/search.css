@@ -1,0 +1,96 @@
+.head {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+}
+.head * {
+  margin-right: 10px;
+}
+
+.content {
+  display: grid;
+  column-gap: 10px;
+  justify-content: space-between;
+  grid-template-columns: 150px 150px;
+  margin-top: 20px;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #bbb;
+  padding-top: 20px;
+}
+
+.pagination * {
+  margin-right: 5px;
+}
+
+.pagination .morebtn {
+  padding: 0;
+  margin: 0;
+}
+
+.pagination .morebtn .change-page {
+  display: none;
+  cursor: default;
+  background-color: #dddd;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100px;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+}
+
+.pagination .morebtn .show {
+  display: flex;
+}
+
+.pagination .morebtn .change-page * {
+  margin: 0;
+}
+
+.pagination .morebtn .change-page > input {
+  width: 40px;
+  padding: 5px;
+}
+
+.pagination > button {
+  font-size: 10px;
+  font-weight: 800;
+  padding: 5px 10px;
+  border: none;
+  background: none;
+}
+
+.pagination *:hover {
+  cursor: pointer;
+}
+
+.pagination .active {
+  color: white;
+  background-color: rgb(255, 136, 0);
+}
+
+/* tablet */
+@media only screen and (min-width: 600px) {
+  .content {
+    justify-content: start;
+    grid-template-columns: 150px 150px 150px;
+  }
+  .pagination * {
+    margin-right: 20px;
+  }
+  .pagination > button {
+    font-size: 14px;
+  }
+}
+
+/* desktop */
+@media only screen and (min-width: 768px) {
+  .content {
+    grid-template-columns: 150px 150px 150px 150px;
+  }
+}

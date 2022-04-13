@@ -1,0 +1,38 @@
+.footer {
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  height: 250px;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.footer > div {
+  max-width: 300px;
+}
+
+.footer > div .logo {
+  color: rgb(255, 136, 0);
+}
+
+.footer > div > h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.footer > div > p {
+  text-align: justify;
+  margin: 5px 0px;
+}
+
+.footer > div > div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.footer > div > div > span {
+  margin-left: 15px;
+}

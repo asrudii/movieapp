@@ -1,0 +1,79 @@
+.mynav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  height: 70px;
+  box-shadow: 0.5px 0px 3px 0.4px #bbbb;
+  margin-bottom: 20px;
+}
+
+.mynav-container .logo {
+  display: none;
+  font-size: x-large;
+  font-weight: 700;
+  color: rgb(255, 136, 0);
+}
+
+.mynav-container .search-section {
+  display: flex;
+  align-items: center;
+}
+
+.mynav-container .search-section > input {
+  color: rgba(41, 41, 41, 0.667);
+  border-radius: 10px;
+  border: 1px solid #bbbb;
+  padding: 8px;
+  width: 250px;
+  margin-right: 20px;
+}
+
+.mynav-container .search-section > button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  background: none;
+  background-color: rgb(255, 136, 0);
+  height: 35px;
+  width: 40px;
+}
+
+.mynav-container .search-section > button:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.btn-auth {
+  display: none;
+}
+
+/* tablet */
+@media only screen and (min-width: 600px) {
+}
+
+/* desktop */
+@media only screen and (min-width: 768px) {
+  .mynav-container {
+    justify-content: space-between;
+  }
+  .mynav-container .logo {
+    display: block;
+  }
+  .btn-auth {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 5px;
+    border-bottom: 3px solid black;
+  }
+  .btn-auth:hover {
+    cursor: pointer;
+  }
+  .mynav-container .search-section > input {
+    width: 400px;
+  }
+}
