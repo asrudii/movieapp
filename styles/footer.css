@@ -3,14 +3,15 @@
   width: 100%;
   background-color: black;
   color: white;
-  height: 250px;
   display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
   justify-content: space-around;
   padding: 20px;
 }
 
 .footer > div {
-  max-width: 300px;
+  max-width: 100%;
 }
 
 .footer > div .logo {
@@ -25,6 +26,8 @@
 .footer > div > p {
   text-align: justify;
   margin: 5px 0px;
+  color: rgba(221, 221, 221, 0.667);
+  font-size: 14px;
 }
 
 .footer > div > div {
@@ -35,4 +38,24 @@
 
 .footer > div > div > span {
   margin-left: 15px;
+  color: rgba(221, 221, 221, 0.667);
+}
+
+/* tablet */
+@media only screen and (min-width: 600px) {
+  .footer {
+    flex-direction: row;
+    gap: 20px;
+  }
+  .footer > div {
+    max-width: 300px;
+  }
+  .footer > div > h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+/* desktop */
+@media only screen and (min-width: 768px) {
 }
