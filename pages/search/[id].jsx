@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import MyNav from '../../components/MyNav';
 import { FiClock } from 'react-icons/fi';
 import { useRouter } from 'next/router';
@@ -8,7 +8,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import Footer from '../../components/Footer';
 
 export default function Detail() {
-  const [dataMovie, setDataMovie] = useState({});
   const router = useRouter();
   // redux
   const dispatch = useDispatch();
@@ -21,7 +20,6 @@ export default function Detail() {
         `http://www.omdbapi.com/?i=${id}&plot=full&apikey=7819d7f3`
       );
       dispatch({ type: 'MOVIE_DETAIL', payload: data.data });
-      setDataMovie(data.data);
     } catch (error) {
       alert(error);
     }
@@ -102,20 +100,6 @@ export default function Detail() {
           <span>Synopsis</span>
           <p>{globalState.detailMovieReducer.Plot}</p>
         </div>
-        {/* <div className="synopsis">
-          <span>Ratings</span>
-          <div className="ratings">
-            <span>imdbRating </span>
-            <ReactStars
-              count={5}
-              value={dataMovie.imdbRating / 2}
-              edit={false}
-              isHalf={true}
-              size={24}
-              activeColor="#ffd700"
-            />
-          </div> */}
-        {/* </div> */}
       </div>
       <Footer />
     </div>
