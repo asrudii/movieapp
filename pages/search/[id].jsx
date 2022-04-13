@@ -5,6 +5,7 @@ import { FiClock } from 'react-icons/fi';
 import { useRouter } from 'next/router';
 // import ReactStars from 'react-rating-stars-component';
 import { useDispatch, useSelector } from 'react-redux';
+import Footer from '../../components/Footer';
 
 export default function Detail() {
   const [dataMovie, setDataMovie] = useState({});
@@ -31,7 +32,7 @@ export default function Detail() {
   }, []);
 
   return (
-    <div>
+    <div className="wrap">
       <MyNav />
       <div className="container">
         <div className="top-detail">
@@ -116,6 +117,7 @@ export default function Detail() {
           </div> */}
         {/* </div> */}
       </div>
+      <Footer />
     </div>
   );
 }
